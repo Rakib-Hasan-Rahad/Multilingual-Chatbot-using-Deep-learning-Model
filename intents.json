@@ -1,0 +1,79 @@
+{
+  "intents": [
+    {
+      "tag": "greeting",
+      "patterns": ["Hi", "Hey", "How are you", "Is anyone there?", "Hello", "Good day"],
+      "responses": ["Hello! How can I assist you today?", "Hi! How can I help you?", "Hi there, what can I do for you?", "Hi there, how can I help?"],
+      "context_set": ["greeting"]
+    },
+    {
+      "tag": "goodbye",
+      "patterns": ["Bye", "See you later", "Goodbye"],
+      "responses": ["See you later, thanks for visiting", "Have a nice day", "Bye! Come back again soon."],
+      "context_set": ["goodbye"]
+    },
+    {
+      "tag": "thanks",
+      "patterns": ["Thanks", "Thank you", "That's helpful", "Thanks a lot!"],
+      "responses": ["Happy to help!", "Any time!", "My pleasure"],
+      "context_set": ["thanks"]
+    },
+    {
+      "tag": "items",
+      "patterns": ["Which items do you have?", "What kinds of items are there?", "What do you sell?"],
+      "responses": ["We sell Chicken Cone and Meatbox", "We have chicken cone and meatbox"],
+      "context_set": ["items"]
+    },
+    {
+      "tag": "payments",
+      "patterns": ["Do you take credit cards?", "Do you accept Mastercard?", "Can I pay with Paypal?", "Are you cash only?"],
+      "responses": ["We accept VISA, Mastercard and Paypal", "We accept most major credit cards and Paypal"],
+      "context_set": ["payments"]
+    },
+    {
+      "tag": "delivery",
+      "patterns": ["How long does delivery take?", "How long does shipping take?", "When do I get my delivery?"],
+      "responses": ["Delivery takes 2-4 days", "Shipping takes 2-4 days"],
+      "context_set": ["delivery"]
+    },
+    {
+      "tag": "funny",
+      "patterns": ["Tell me a joke!", "Tell me something funny!", "Do you know a joke?"],
+      "responses": [
+        "Why did the hipster burn his mouth? He drank the coffee before it was cool.",
+        "What did the buffalo say when his son left for college? Bison."
+      ],
+      "context_set": ["funny"]
+    },
+    {
+      "tag": "special_offer",
+      "patterns": ["Any special offers?", "Tell me about discounts", "What promotions do you have?"],
+      "responses": ["We currently have a special offer on Chicken Cone! Buy one, get one free."],
+      "context_set": ["items"]
+    },
+    {
+      "tag": "order_status",
+      "patterns": ["Check my order status", "Where's my package?", "Track my order"],
+      "responses": ["I can help you with that. Can you provide your order number?"],
+      "context_set": ["delivery"]
+    },
+    {
+      "tag": "product_info",
+      "patterns": ["Tell me about your products", "Product information", "What's in your menu?"],
+      "responses": ["We offer a variety of high-quality products. Would you like details on a specific category?"],
+      "context_set": ["items"]
+    },
+    {
+      "tag": "customer_support",
+      "patterns": ["Can I talk to customer support?", "Need help from support", "Customer service"],
+      "responses": ["Certainly! You can reach our customer support team at support@streetchicken.com or call 017000000058."],
+      "context_set": ["any"]
+    },
+    {
+      "tag": "tech_support",
+      "patterns": ["I'm having technical issues", "Tech support", "My account is not working"],
+      "responses": ["I apologize for the inconvenience. Please provide more details, and I'll do my best to assist you."],
+      "context_set": ["any"]
+    }
+  ]
+}
